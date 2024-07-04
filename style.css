@@ -1,5 +1,4 @@
 /* Estilos globais */
-<<<<<<< HEAD
   body{
     margin:0;
     padding:0;
@@ -19,7 +18,6 @@
     font-size: 28px;
     cursor: pointer; 
   }
-=======
 body {
     margin: 0;
     padding: 0;
@@ -183,9 +181,6 @@ body {
   }
   
   
-  
-  
->>>>>>> 569724b628986417e66427662585489a92906f7d
   #menu {
     display: none;
     text-align: center;
@@ -230,28 +225,15 @@ body {
     margin-right: 0px;
     margin: 0;
   }
-<<<<<<< HEAD
-=======
-  
-  /* Estilos para os botões no contêiner */
-  
-  
-  /* Estilos para os botões no contêiner */
->>>>>>> 569724b628986417e66427662585489a92906f7d
+
   .Inicial {
     margin-left: auto;
     width: 190px;
     height: 40px;
-<<<<<<< HEAD
-    background: rgba(230, 13, 0,-1.21);
-=======
-    background: rgba(230, 23, 0, 0.719);
->>>>>>> 569724b628986417e66427662585489a92906f7d
     color: white;
     font-size: 16px;
     border: none;
     border-bottom: 4px solid rgb(123, 205, 146);
-<<<<<<< HEAD
     border-radius: 1px;
     cursor: pointer;
   }
@@ -280,7 +262,6 @@ body {
       margin-right: 10px;
     }
   }
-=======
     border-radius: 5px;
     cursor: pointer;
   }
@@ -339,7 +320,6 @@ body {
     background-color: #0056b3;
   }
   
->>>>>>> 569724b628986417e66427662585489a92906f7d
   @media screen and (max-width: 768px) {
     #menu {
       display: none;
@@ -350,23 +330,15 @@ body {
       background: #333;
       text-align: center;
     }
-<<<<<<< HEAD
-=======
-    
->>>>>>> 569724b628986417e66427662585489a92906f7d
     #menu ul li {
       display: block;
       margin: 10px 0;
     }
-<<<<<<< HEAD
-=======
-    
->>>>>>> 569724b628986417e66427662585489a92906f7d
+
     #menu.active {
       display: block;
     }
   }
-<<<<<<< HEAD
   @media screen and (max-width: 750px) {
     .navbar-toggler {
       display: block;
@@ -389,7 +361,7 @@ body {
         font-size: 14px;
     }
   }
-=======
+
   .btn-custom {
     background-color:rgba(230, 23, 0, 0.719) !important;
     color: white !important;
@@ -397,4 +369,4 @@ body {
     font-size: 16px !important;
   }
   
->>>>>>> 569724b628986417e66427662585489a92906f7d
+
