@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossa - Linhas Aéreas </title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/loginforms.css">
+    <link rel="stylesheet" href="css/forms.css">
+    <link rel="stylesheet" href="css/passagens-painel.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Tilt+Neon&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar-header">
+            <div class="division1">
+                <a class="logo-nav" href="index.html">
+                    <img id="logo-img" src="imagens/Nossa.jpeg" alt="Logo da empresa">
+                </a>
+                <ul class="acordeon">
+                    <button type="button" class="trigger">
+                        Login
+                    </button>
+                    <div class="overlay">
+                        <form class="dropdown-menu">
+                            <div class="dropdown-content" >                 
+                                <button type="button" class="close-button">X</button>                                                        
+                                <div class="id">
+                                    <label for="cpf">CPF</label>
+                                    <input type="text" id="cpf" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="000.000.000-00" required>
+                                </div>
+                                <div class="senha" >
+                                    <label for="labelsenha" class="form-label">Senha</label>
+                                    <input type="password" class="form-control" id="labelsenha" placeholder="********">
+                                </div>
+                                 <div class="checkbox">
+                                    <input type="checkbox" class="form-check-input" id="dropdownCheck2">
+                                    <label class="form-check-label" for="dropdownCheck2">Lembrar login</label>
+                                </div>
+                                <button type="submit" class="btn-entrar" href="/login/login.html">Entrar</button>
+                            </div>
+                            
+                        </form>
+                    </div>
+                </ul>
+            </div>
+            <div class="division2">
+                <button class="menu-hambur" onclick="CloseOpen()">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </button>
+                <div class="menu-open" id="menu-open">
+                    <div class="logo-X">
+                        <a class="logo-nav" href="index.html">
+                            <img id="logo-img" src="imagens/Nossa.jpeg" alt="Logo da empresa">
+                        </a>
+                        <button id="close" onclick="CloseOpen()">X</button> 
+                    </div>
+                    <ul class="items-nav">
+                        <li class="nav-item">
+                            <a class="Reserva" aria-current="page" href="#">Minha Reserva</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="Compra" href="#">Comprar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="Check" href="#">Check-in</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="Check" href="#">Stopover</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="Check" href="#"> Viaje com Milhas</a>
+                        </li>
+                    </ul>
+                </div> 
+                
+            </div>
+            
+        </nav>
+        <div class="mobile-menu" onClick="openMenu()">
+                 
+           
+        </div>                
+    </header>
+
+    <section>
+                <nav class="menu-nav">
+                    <ul>
+                        <li>
+                            <button type="button" class="Inicial"  data-target="Passagens" onclick="mostrarPassagens()">Passagens Aéreas</button>
+                        </li>
+                        <li>
+                            <button type="button" class="Inicial" data-target="Stopover" onclick="mostrarStopover()">Stopover</button>
+                            
+                        </li>
+                        <li>
+                            <button type="button" class="Inicial" data-target="Milhas" onclick="mostrarMilhas()"> Viaje com Milhas</button>
+                        </li>
+                        <li>
+                            <button type="button" class="Inicial" data-target="Carga" onclick="mostrarCarga()">&copy;Nossa Carga</button>
+                        </li>
+                        
+                    </ul>
+                </nav>
+                <div class="painel">
+                    <section class="Passagens" class="toggle-section" >
+                        <form action="#" method="post">
+                            <h2>Selecione sua Passagem</h2>
+                            <div class="passagens-container">
+                                <select class="form-select" id="origemSelect" aria-label="Default select example">
+                                    <option selected>Origem:</option>
+                                    <option value="1">THE - Teresina </option>
+                                    <option value="2">PHB - Parnaíba</option>
+                                    <option value="3">NSR - São Raimundo Nonato</option>
+                                    <option value="4">FOR - Fortaleza </option>
+                                    <option value="5">JJD - Jericoacoara </option>
+                                    <option value="6">JDO - Juazeiro do Norte </option>
+                                    <option value="7">IMP - Imperatriz </option>
+                                    <option value="8">SLS - São Luís </option>
+                                    <option value="9">NAT - Natal </option>
+                                    <option value="10">REC - Recife </option>
+                                    <option value="11">PNZ - Petrolina</option>
+                                    <option value="12">FEN - Fernando de Noronha</option>                                       
+                                </select>
+                                <select class="form-select">
+                                    <option selected>Destino:</option>
+                                    <option value="1">THE - Teresina</option>  
+                                    <option value="2">PHB - Parnaíba</option> 
+                                    <option value="3">NSR - São Raimundo Nonato</option> 
+                                    <option value="4">FOR - Fortaleza</option> 
+                                    <option value="5">JJD - Jericoacoara</option> 
+                                    <option value="6">JDO - Juazeiro do Norte</option> 
+                                    <option value="7">IMP - Imperatriz</option> 
+                                    <option value="8">SLS - São Luís</option> 
+                                    <option value="9">NAT - Natal</option> 
+                                    <option value="10">REC - Recife</option> 
+                                    <option value="11">PNZ - Petrolina</option> 
+                                    <option value="12">FEN - Fernando de Noronha</option>
+                                </select>
+                            </div>
+                            <div class="input-ida-volta">
+                                <input type="checkbox" class="form-check-input" id="retorno1"> 
+                                <label for="form-check-input"> Ida e volta</label>
+                            </div>
+                            <div class="set-date">
+                                <div>
+                                    <label for="Partida" id="retorno">Data de Partida:</label>
+                                    <input type="date" class="form-control" id="Partida" name="data-partida" min="" required>   
+                                </div>
+                                <div id="Retorno" style="display: none;">
+                                    <label for="Retorno" id="retorno2">Data de Retorno:</label>
+                                    <input type="date" class="form-control" id="Return" min=""> 
+                                </div>                           
+                            </div> 
+                            <div class="set-passenger">                      
+                                <label for="num-passageiros">Número de Passageiros: </label>
+                                <input type="number" id="num-passageiros" class="num-passageiros" name="num-passageiros" min="1" max="12" required>
+                            </div>
+                            <button class="form-buscar" type="submit">Buscar</button>
+                        </form>
+                        
+  
+                    </section>
+                    <section id="Milhas" class="toggle-section" style="display: none;">
+                        <h2>Milhas </h2>
+                        <form action="#" method="post">
+                            <label for="origem">Or:</label>
+                                <input type="text" id="origem" name="origem" required>
+    
+                                <label for="destino">Destino:</label>
+                                <input type="text" id="destino" name="destino" required>
+    
+                                <label for="data-partida">Data de Partida:</label>
+                                <input type="date" id="data-partida" name="data-partida" required>
+    
+                                <label for="classe">Classe:</label>
+                                <select id="classe" name="classe">
+                                    <option value="economica">Econômica</option>
+                                    <option value="executiva">Executiva</option>
+                                    <option value="primeira-classe">Primeira Classe</option>
+                                </select>
+    
+                                <label for="num-passageiros">Número de Passageiros:</label>
+                                <input type="number" id="num-passageiros" name="num-passageiros" min="1" max="10" required>
+    
+                                <input type="submit" value="Buscar Passagens">
+                                        
+                        </form>
+                    </section>                   
+                    <section id="Carga" class="toggle-section" style="display: none;">
+                        <h2>Carga </h2>
+                        <form action="#" method="post">
+                            <label for="origem">Origem:</label>
+                            <input type="text" id="origem" name="origem" required>
+    
+                            <label for="destino">Destino:</label>
+                            <input type="text" id="destino" name="destino" required>
+    
+                            <label for="data-partida">Data de Partida:</label>
+                            <input type="date" id="data-partida" name="data-partida" required>
+    
+                            <label for="classe">Classe:</label>
+                            <select id="classe" name="classe">
+                                <option value="economica">Econômica</option>
+                                <option value="executiva">Executiva</option>
+                                <option value="primeira-classe">Primeira Classe</option>
+                            </select>
+    
+                            <label for="num-passageiros">Número de Passageiros:</label>
+                                <input type="number" id="num-passageiros" name="num-passageiros" min="1" max="10" required>
+    
+                            <input type="submit" value="Buscar Passagens">
+                                        
+                        </form>
+                    </section>
+                    <section id="Stopover" class="toggle-section" style="display: none;">
+                        <form action="#" method="post">
+                            <p>    Já parou para pensar que você pode fazer uma viagem e conhecer duas cidades em lugares 
+                            diferentes ou até estados diferentes?
+                            Conheça o nosso Stopover e tenha essa experiencia!</p>
+                            Cidades Stopover : 
+                            <label for="cidade"></label>
+                            <select name="cidade" id="cidade">
+                            <option value="sp">São Paulo</option>
+                            <option value="rj">Rio de Janeiro</option>
+                            <option value="bh">Belo Horizonte</option>
+                            <option value="poa">Porto Alegre</option>
+
+                        </form>
+                    </section>
+                </div>
+    </section>
+
+    <footer>
+        <!-- Conteúdo do rodapé aqui -->
+        <p>&copy; 2024 Meu Site. Todos os direitos reservados.</p>
+        <!-- ... -->
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="js/menu-hamburguer.js"></script>
+    <script src="js/loginforms.js"></script>
+    <script src="js/passagens-painel.js"></script>
+</body>
+
+</html>

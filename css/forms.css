@@ -1,0 +1,10 @@
+
+.btn-entrar {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    width:5rem;
+    font-weight: 700;
+    color: white;
+    font-size:1rem;
+    background-color: rgb(123, 205, 146);
+}

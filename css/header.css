@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+}
+header {
+    font-size: 1.5rem;
+    background: #7BCD92;
+    margin:0;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    height: 12vh;  
+    width:100%; 
+}
+.navbar-header {
+    display: flex;
+    justify-content: space-between ;
+    padding:5%;
+    width:100%;
+}
+.division1 {
+    display:flex;
+    gap:4rem;
+}
+.division2 {
+    align-self:center;
+}
+.logo-X {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap:9rem;
+    margin:2rem;
+}
+.logo-X button {
+    background:none;
+    color:white;
+    font-size:2rem;
+    width:4rem;
+    margin-left: 4rem;
+}
+
+.logo-nav {
+    display:flex;
+    align-items:center; 
+}
+
+.mobile-menu {
+    display:none;
+    cursor:pointer;
+    width:50px;
+    height:30px;
+    align-items:center;
+}
+.menu-hambur {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    border: 0;
+    background: none;
+
+}
+.line {
+    width: 25px;
+    height: 3px;
+    background: #ffffff;
+    margin: 0.2rem;
+}
+.menu-open {
+    display:none;
+    justify-content:flex-start;
+    align-items:flex-start;
+    gap:5rem;
+    padding:1.5rem;
+    list-style: none;
+    font-family: 'Tilt Neon', sans-serif;
+    position: absolute;
+    right:0;
+    top: 0;
+    width:100vw;
+    height:100vh;
+    background-color:#68148E;
+    flex-direction: column;
+    z-index:1;
+}
+.items-nav {
+    display:flex;
+    flex-direction: column;
+
+    gap:2rem;
+    font-size:1.85rem;
+    margin-top:3.5rem;
+    margin:2rem;
+}
+.nav-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+.nav-item a {
+    text-decoration: none;
+    color: white;
+}
+.Reserva::after {
+    background-image: url("../imagens/icons8-bilhete-80.png");
+
+}
+
+
+#logo-img {
+    width: 4rem;
+    border-radius:15%;
+    height:4rem
+    
+} 
+
+.acordeon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+

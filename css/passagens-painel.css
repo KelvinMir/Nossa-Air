@@ -1,0 +1,136 @@
+.painel {
+  width: 100%;
+  height:80%;
+  font-size: 18px; 
+  display: flex; 
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  padding: 10px; 
+  box-sizing: border-box;         
+}
+.Passagens {
+    padding: 1.1rem;
+    border-radius: 8px;
+    margin-top: 20px;
+    background-color:  #7BCD92;
+    height: 100%;
+    width:80%;
+  }
+.Passagens h2 {
+  font-family:'Tilt Neon';
+  color:#ffffff;
+}
+  form {
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+  }
+  .Passagens label {
+    padding: 5px;
+    color:white;
+  }
+  .passagens-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .passagens-container .form-select {
+    font-family: 'Tilt Neon', sans-serif;
+    width:50%;
+    color: #6c757de6;
+    border: 1px solid #ccc;
+    padding: 5px;
+    font-size: 16px;
+    background-color: white;
+  }
+  .form-select:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  .datalist {
+    background-color: white;
+  }
+  .input-ida-volta {
+    font-family: 'Tilt Neon', sans-serif;
+    display:flex;
+    align-items: center;
+    color:#ffffff;
+    margin:0;
+    height:10%;
+  }
+  .set-date {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap:1rem;
+    font-family: 'Tilt Neon', sans-serif;
+    margin-bottom: 2rem;
+  }
+  .set-date div {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    width: 100%;
+  }
+  input[type="date"] {
+    font-family: 'Tilt Neon', sans-serif;
+    width: 50%;
+    color: #6c757de6;
+    border: 1px solid #ccc;
+    padding: 5px;
+    font-size: 16px;
+    background-color: white;
+  }
+  .form-control {
+    color: #6c757de6;
+  }
+  .set-passenger {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'Tilt Neon', sans-serif;
+    color:#ffffff;
+  }
+  .num-passageiros {
+    color: #6c757de6;
+  }
+  .form-buscar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #68148E;
+    border:none;
+    border-radius:.625rem;
+    height:3rem;
+    padding:.5rem;
+    font-family: 'Tilt Neon', sans-serif;
+    color:#ffffff;
+    font-size:1rem;
+  }
+
+  
+  .passagens input[type="text"],
+  .passagens select,
+  .passagens input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #EF303D;
+    border-radius: 4px;
+  }
+
+  
+  #passagens input[type="submit"] {
+    align-items:center;
+    justify-content: center;
+  }
+  
+  @media screen and (min-width: 300px) {
+    .set-date {
+      flex-direction:column;
+      gap:0;
+      margin-bottom: 0;
+    }
+  }

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossa - Linhas Aéreas </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+            <a href="/index.html">
+                <img src="/imagens/Nossa.jpeg" alt="Logo da empresa" class="logo-img">
+            </a>        
+        
+            <nav id="menu">
+                <ul>
+                    <li><a href="#">Página Inicial</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+        
+        <div class="barrasup">
+            <button class="button bold" >Minha Reserva</button> 
+            <button class="button bold">Comprar</button>
+            <button class="button bold">Check-in</button>
+        </div>
+        <div> 
+            <a href="/login/index.html">
+                <button class="right-align-button bold" >Cadastre-se</button>
+            </a> 
+           
+        </div>
+        
+        
+    </header>
+    <main>
+        
+        <div id="section" >
+                <p>Faça seu login:</p>
+                <p id="form">
+                    CPF   <input type="text" id="cpf" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="000.000.000-00" required>  
+                </p>
+                <p>
+                    Senha<input type="text" name="Senha" id="Senha">
+                </p>
+                <p>
+                    <input type="button" id="Entrar" value="Entrar" onclick="verificar()">
+                </p>
+        </div>
+        <div class="background-image"></div>
+    </main>
+   
+    <footer>
+
+    </footer>
+    <script src="script.js"></script>
+    
+</body>
+</html>
