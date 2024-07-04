@@ -3,6 +3,7 @@ function toggleMenu() {
     menu.classList.toggle('active');
   }
   
+<<<<<<< HEAD
 const toggleButtons = document.querySelectorAll(".Inicial");
 const toggleSections = document.querySelectorAll(".toggle-section");
 
@@ -12,19 +13,50 @@ toggleButtons.forEach(button => {
     const targetSectionId = button.dataset.target;
 
     
+=======
+ // Selecione todos os botões e as seções controladas por eles
+const toggleButtons = document.querySelectorAll(".Inicial");
+const toggleSections = document.querySelectorAll(".toggle-section");
+
+// Adicione o evento de clique a cada botão
+toggleButtons.forEach(button => {
+  button.addEventListener("click", () => {
+    // Obtenha o ID da seção associada ao botão
+    const targetSectionId = button.dataset.target;
+
+    // Oculte todas as seções
+>>>>>>> 569724b628986417e66427662585489a92906f7d
     toggleSections.forEach(section => {
       section.style.display = "none";
     });
 
+<<<<<<< HEAD
     
+=======
+    // Exiba a seção alvo
+>>>>>>> 569724b628986417e66427662585489a92906f7d
     const targetSection = document.getElementById(targetSectionId);
     targetSection.style.display = "block";
   });
 });
 
+<<<<<<< HEAD
 const idavolta = document.getElementById('retorno1');
 const voltar = document.getElementById('retorno2');
 const dataretorno = document.getElementById('Retorno');
+=======
+//Botão para fazer calendario de escolha de volta aparecer
+
+
+
+
+
+
+
+const idavolta = document.getElementById('retorno1');
+const voltar = document.getElementById('retorno2');
+const dataretorno = document.getElementById('retorno3');
+>>>>>>> 569724b628986417e66427662585489a92906f7d
 
 
 idavolta.addEventListener('click', IdaEvolta);
@@ -40,6 +72,13 @@ function IdaEvolta() {
 }
 
 
+<<<<<<< HEAD
+=======
+
+
+//Busca de passagem 
+
+>>>>>>> 569724b628986417e66427662585489a92906f7d
 document.getElementById("Passagens").addEventListener("submit", function (event) {
     event.preventDefault();
 

@@ -1,4 +1,5 @@
 /* Estilos globais */
+<<<<<<< HEAD
   body{
     margin:0;
     padding:0;
@@ -18,6 +19,173 @@
     font-size: 28px;
     cursor: pointer; 
   }
+=======
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  /* Estilos Header */
+  header {
+    height: 80px;
+    font-size: 25px;
+    text-align: center;
+    background: rgb(123, 205, 146);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    
+  }
+  
+  #logo-img {
+    width: 80px;
+    height: 70px;
+    border-radius: 10px;
+    margin-left: 15px;
+    
+   
+  } 
+
+  @media screen and (min-width: 768px) {
+    .navbar-nav {
+      gap: 100px !important;
+      margin-left: 220px;
+      margin-right: 220px;
+      
+    }
+    .nav-link.active {
+      width: 180px;
+      height: 90px;
+      text-align: center;
+      align-items: center;
+      display: flex !important;
+      list-style: none !important;
+    }
+    #navbarNavDropdown {
+      margin-left: 70px;
+      margin-right: 10px;
+    }
+  }
+
+  .dropdown-menu {
+    min-width: 20rem !important;
+  } 
+  label {
+    display: flex;
+    margin-bottom: 19px !important;
+  }
+  #painel {
+    max-width: 100%; /* Alterado para 100% para que o painel ocupe todo o espaço disponível */
+    margin: 0 10px; /* Margens ajustadas para um espaçamento mais uniforme */
+    font-size: 18px; /* Reduzido o tamanho da fonte para tamanhos menores de tela */
+    display: flex; /* Adicionado para usar flexbox */
+    flex-direction: column; /* Os itens dentro do painel serão empilhados verticalmente */
+    align-items: center; /* Centralizar os itens horizontalmente */
+    
+    padding: 10px; /* Adicionado um espaço interno para melhorar a aparência */
+    box-sizing: border-box; /* O espaço interno não afetará as dimensões totais do painel */
+    margin-bottom: 100px !important;          
+}
+
+/* Media query para ajustar o tamanho da fonte em telas menores */
+@media (max-width: 768px) {
+    #painel {
+        font-size: 14px;
+    }
+   
+}
+
+/* CSS for displaying the hamburger menu on smaller screens */
+@media screen and (max-width: 750px) {
+  .navbar-toggler {
+    display: block;
+  }
+
+  #navbarNavDropdown {
+    display: none;
+    position: fixed; /* Fix the menu position */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f2f2f2;
+    z-index: 1; /* Place the menu on top of other content */
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .nav-item {
+    margin-bottom: 10px;
+  }
+
+
+}
+  
+  /* Estilos dos botões do header */
+  .button {
+    color: black;
+    margin: 0;
+    margin-right: 190px;
+    font-size: 20px;
+    height: 50px;
+    
+    padding-left: 0;
+    padding-right: 0;
+    border-radius: 20px;
+    background: rgb(123, 205, 146);
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  
+  /* Estilos do botão Login */
+  .right-align-button { 
+    color: black;
+    font-size: 20px;
+    height: 40px;
+    background: rgb(123, 205, 146);
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 15px;
+  }
+  
+  /* Estilo para o botão quando o mouse está sobre ele (hover) */
+  .button:hover, .right-align-button:hover {
+    background-color: rgb(110, 240, 190);
+    color: #411976;
+  }
+  
+  /* Estilos para o texto em negrito */
+  .bold {
+    font-weight: bold;
+  }
+  
+  /* Estilos para o menu hambúrguer */
+  .menu-icon {
+    
+    font-size: 28px;
+    cursor: pointer;
+    
+  }
+  
+  
+  
+  
+>>>>>>> 569724b628986417e66427662585489a92906f7d
   #menu {
     display: none;
     text-align: center;
@@ -62,15 +230,28 @@
     margin-right: 0px;
     margin: 0;
   }
+<<<<<<< HEAD
+=======
+  
+  /* Estilos para os botões no contêiner */
+  
+  
+  /* Estilos para os botões no contêiner */
+>>>>>>> 569724b628986417e66427662585489a92906f7d
   .Inicial {
     margin-left: auto;
     width: 190px;
     height: 40px;
+<<<<<<< HEAD
     background: rgba(230, 13, 0,-1.21);
+=======
+    background: rgba(230, 23, 0, 0.719);
+>>>>>>> 569724b628986417e66427662585489a92906f7d
     color: white;
     font-size: 16px;
     border: none;
     border-bottom: 4px solid rgb(123, 205, 146);
+<<<<<<< HEAD
     border-radius: 1px;
     cursor: pointer;
   }
@@ -99,6 +280,66 @@
       margin-right: 10px;
     }
   }
+=======
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Efeito de hover (sobreposição) para os botões no contêiner */
+  .Inicial:hover {
+    background-color: rgb(110, 240, 190);
+  }
+  #Passagens {
+    padding: 20px;
+    border: 5px solid rgba(230, 23, 0, 0.719);
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
+    background-color: #007bff;
+    
+  
+  }
+  
+  #Passagens h2 {
+    margin-left: 10px;
+  }
+  
+  #Passagens form {
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  #Passagens label {
+    font-weight: bold;
+  }
+  
+  #passagens input[type="text"],
+  #passagens input[type="date"],
+  #passagens select,
+  #passagens input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #9c3333;
+    border-radius: 4px;
+  }
+  
+  #passagens input[type="submit"] {
+    width: auto;
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #passagens input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+>>>>>>> 569724b628986417e66427662585489a92906f7d
   @media screen and (max-width: 768px) {
     #menu {
       display: none;
@@ -109,14 +350,23 @@
       background: #333;
       text-align: center;
     }
+<<<<<<< HEAD
+=======
+    
+>>>>>>> 569724b628986417e66427662585489a92906f7d
     #menu ul li {
       display: block;
       margin: 10px 0;
     }
+<<<<<<< HEAD
+=======
+    
+>>>>>>> 569724b628986417e66427662585489a92906f7d
     #menu.active {
       display: block;
     }
   }
+<<<<<<< HEAD
   @media screen and (max-width: 750px) {
     .navbar-toggler {
       display: block;
@@ -139,3 +389,12 @@
         font-size: 14px;
     }
   }
+=======
+  .btn-custom {
+    background-color:rgba(230, 23, 0, 0.719) !important;
+    color: white !important;
+    border-bottom: 4px solid rgb(123, 25, 146) !important;
+    font-size: 16px !important;
+  }
+  
+>>>>>>> 569724b628986417e66427662585489a92906f7d
