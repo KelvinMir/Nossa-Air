@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom'
 import { ui } from '../ui'
 
+const airplaneImage = `${import.meta.env.BASE_URL}imagens/aviao-nossa.jpeg`
+
 export function Hero({ onPrimaryAction }) {
   return (
     <section className={`${ui.container} grid gap-6 pt-8 lg:grid-cols-[1.08fr_0.92fr]`}>
@@ -49,7 +51,7 @@ export function Hero({ onPrimaryAction }) {
       <div className={`${ui.roundedPanel} relative overflow-hidden p-4`}>
         <img
           className="h-full min-h-[320px] w-full rounded-[1.5rem] object-cover saturate-110 lg:min-h-[430px]"
-          src="/imagens/aviao-nossa.jpeg"
+          src={airplaneImage}
           alt="Aviao em voo representando a Nossa Air"
         />
         <div className="absolute bottom-5 left-5 right-5 rounded-[1.3rem] border border-ink/8 bg-[rgba(255,248,238,0.92)] p-4 md:left-auto md:right-8 md:max-w-[21rem]">

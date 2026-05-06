@@ -8,7 +8,7 @@ export const ui = {
   pageBackdrop:
     'pointer-events-none fixed inset-0 -z-20 bg-[radial-gradient(circle_at_top_left,rgba(142,207,155,0.42),transparent_32%),radial-gradient(circle_at_top_right,rgba(240,199,94,0.32),transparent_22%),linear-gradient(180deg,#f9f2e8_0%,#f3ebdf_100%)]',
   pageTexture:
-    'pointer-events-none fixed inset-0 -z-10 bg-[url("/imagens/fundo-nossa.png")] bg-cover bg-center opacity-[0.06]',
+    'pointer-events-none fixed inset-0 -z-10 bg-cover bg-center opacity-[0.06]',
   pageContent: 'relative z-10 min-h-screen',
   pageMain: 'px-4 pb-8 sm:px-6 lg:px-9',
   container: 'mx-auto w-full max-w-[1180px]',

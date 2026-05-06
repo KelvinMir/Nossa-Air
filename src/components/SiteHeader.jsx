@@ -10,6 +10,8 @@ const navItems = [
   { label: 'Destinos', section: 'destinos' },
 ]
 
+const logoImage = `${import.meta.env.BASE_URL}imagens/logo-nossa.jpeg`
+
 function scrollToSection(section) {
   const target = document.getElementById(section)
 
@@ -57,7 +59,7 @@ export function SiteHeader() {
         >
           <img
             className="h-14 w-14 rounded-2xl object-cover shadow-soft"
-            src="/imagens/logo-nossa.jpeg"
+            src={logoImage}
             alt="Logo da Nossa Air"
           />
           <span className="grid min-w-0 gap-1">
